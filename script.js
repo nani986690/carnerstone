@@ -146,9 +146,9 @@ function initServices() {
     {
       icon: 'home',
       title: 'Interior Design & Planning',
-      description: 'Creative and functional interior solutions tailored to your lifestyle.',
+      description: 'Creative and functional interior solutions tailored to your lifestyle. Interior design starts from Rs.450/',
       image: 'https://uploads.onecompiler.io/42u9xvqj6/44ffkbmag/images%20(4).jpg',
-      features: ['Space Planning', 'Interior Design Concepts', 'False Ceiling & Wall Designs', 'Modular Furniture Planning', 'Price will be negotiated'],
+      features: ['Space Planning', 'Interior Design Concepts', 'False Ceiling & Wall Designs', 'Modular Furniture Planning', 'Starting from Rs.450/'],
       contactPrimary: '9581026463', contactSecondary: '7893209610'
     },
     {
@@ -316,7 +316,7 @@ function initPortfolio() {
           <img src="${p.image}" alt="${p.title}" class="portfolio-image" loading="lazy">
           <div class="portfolio-overlay">
             <div class="portfolio-overlay-content">
-              <span class="portfolio-location">📍 ${p.location}</span>
+              <span class="portfolio-location"> ${p.location}</span>
               <a href="#contact" class="portfolio-link"><i data-lucide="external-link"></i></a>
             </div>
           </div>
@@ -349,7 +349,7 @@ function initTestimonials() {
   const reviews = [
     {
       name: 'Ravi Kumar', role: 'Home Owner', location: 'Gajuwaka, Vizag', initials: 'RK', rating: 5,
-      text: 'Corner Stone Infra tech built our dream home with exceptional quality. The team was professional, timely, and used premium materials throughout. Highly recommended!'
+      text: 'East End Infra Tech built our dream home with exceptional quality. The team was professional, timely, and used premium materials throughout. Highly recommended!'
     },
     {
       name: 'Priya Lakshmi', role: 'Villa Owner', location: 'Steel Plant Area, Vizag', initials: 'PL', rating: 5,
@@ -390,7 +390,7 @@ function initTestimonials() {
         <div>
           <div class="testimonial-name">${r.name}</div>
           <div class="testimonial-role">${r.role}</div>
-          <div class="testimonial-location">📍 ${r.location}</div>
+          <div class="testimonial-location"> ${r.location}</div>
         </div>
       </div>
     `;
@@ -410,8 +410,8 @@ function initContact() {
 
   const contactInfo = [
     { icon: 'phone', title: 'Call Us', details: '9581026463 / 7893209610', subtext: 'Mon–Sat 9AM–7PM' },
-    { icon: 'mail', title: 'Email Us', details: 'cornerstoneit1794@gmail.com', subtext: 'We reply within 24 hours' },
-    { icon: 'map-pin', title: 'Visit Us', details: 'Malabar Gold Back Side, Beside Sri Kanya Theatre', subtext: 'Gajuwaka, Visakhapatnam' },
+    { icon: 'mail', title: 'Email Us', details: 'Eastendinfratech1794@gmail.com', subtext: 'We reply within 24 hours' },
+    { icon: 'map-pin', title: 'Visit Us', details: 'Vishweswar nagar, D Mart back side,Srinagar,Gajuwaka Visakhapatnam', subtext: 'Gajuwaka, Visakhapatnam' },
     { icon: 'clock', title: 'Working Hours', details: 'Mon–Sat: 9AM–7PM', subtext: 'Sunday: Closed' }
   ];
 
@@ -462,6 +462,7 @@ function initFooter() {
   const quickLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
+    { name: 'Interior Design', href: '#interior-design' },
     { name: 'Projects', href: '#portfolio' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' }
@@ -473,9 +474,9 @@ function initFooter() {
   ];
 
   const contactDetails = [
-    { icon: 'map-pin', main: 'Malabar Gold Back Side, Beside Sri Kanya Theatre', sub: 'Gajuwaka, Visakhapatnam, India' },
+    { icon: 'map-pin', main: 'Vishweswar nagar, D Mart back side,Srinagar', sub: 'Gajuwaka, Visakhapatnam, India' },
     { icon: 'phone', main: '+91 9581026463', sub: 'Mon–Sat 9AM–7PM' },
-    { icon: 'mail', main: 'cornerstoneit1794@gmail.com', sub: 'We reply within 24 hours' }
+    { icon: 'mail', main: 'Eastendinfratech1794@gmail.com', sub: 'We reply within 24 hours' }
   ];
 
   if (footerSocial) socialLinks.forEach(s => {
