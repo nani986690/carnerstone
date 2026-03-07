@@ -453,10 +453,7 @@ function initFooter() {
   const footerContact = document.getElementById('footer-contact');
 
   const socialLinks = [
-    { icon: 'facebook', href: '#', label: 'Facebook' },
-    { icon: 'instagram', href: '#', label: 'Instagram' },
-    { icon: 'linkedin', href: '#', label: 'LinkedIn' },
-    { icon: 'twitter', href: '#', label: 'Twitter' }
+    { icon: 'instagram', href: 'https://www.instagram.com/east_end_infra_tech?utm_source=qr&igsh=MWU0OTBiY2c1ZXlvNQ==', label: 'Instagram' }
   ];
 
   const quickLinks = [
