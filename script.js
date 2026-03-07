@@ -136,12 +136,21 @@ function initServices() {
 
   const mainServices = [
     {
-      icon: 'hard-hat',
-      title: 'Building & Civil Works',
-      description: 'All kinds of construction and structural services from foundation to finish.',
+      icon: 'shield-check',
+      title: 'Standard Construction Package',
+      description: 'High-quality residential construction using trusted materials. Perfect for comfortable and durable homes.',
       image: 'https://uploads.onecompiler.io/42u9xvqj6/44eyfwg5r/hero.webp',
-      features: ['Residential Building Construction', 'Commercial Building Construction', 'Structural Works', 'Foundation & Concrete Works', 'Masonry Works', 'Price will be negotiated'],
+      features: ['Price: Rs.1900/sq.ft', 'Vizag Steel & Ramco Cement', 'Standard Electrical & Plumbing', 'Quality Brickwork & Plastering', 'Timely Project Completion'],
       contactPrimary: '9581026463', contactSecondary: '7893209610'
+    },
+    {
+      icon: 'award',
+      title: 'Premium Construction Package',
+      description: 'Luxury construction with premium finishes and high-end materials for an elite living experience.',
+      image: 'https://uploads.onecompiler.io/42u9xvqj6/44fmtyzct/WhatsApp%20Image%202026-03-07%20at%2017.47.48.jpeg',
+      features: ['Price: Rs.2400/sq.ft', 'Vizag Steel (Premium Grade)', 'Legrand Electrical & Sudhakar Plumbing', 'Premium Italian Flooring Options', 'Advanced Interior Design Integration'],
+      contactPrimary: '9581026463', contactSecondary: '7893209610',
+      isPremium: true
     },
     {
       icon: 'home',
@@ -179,7 +188,7 @@ function initServices() {
 
   mainServices.forEach((s, i) => {
     const card = document.createElement('div');
-    card.className = 'service-card reveal';
+    card.className = 'service-card reveal' + (s.isPremium ? ' premium-card' : '');
     card.style.transitionDelay = `${i * 80}ms`;
     card.innerHTML = buildServiceCard(s);
     grid.appendChild(card);
